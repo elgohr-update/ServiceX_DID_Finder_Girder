@@ -47,7 +47,7 @@ jobs:
       id: extract_tag_name
 
     - name: Build DID-Finder Image
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: pondd/servicex-did-finder-girder:${{ steps.extract_tag_name.outputs.imagetag }}
         username: ${{ secrets.DOCKER_USERNAME }}
